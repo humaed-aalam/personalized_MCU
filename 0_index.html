@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background: url(images/home_background.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .container{
+            height:100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #container-1{
+            background: linear-gradient(to top right,rgba(1, 5, 54, 0.932),rgba(5, 15, 119, 0.863),rgba(20,0,500,0.7),rgba(0,0,500,0.7),rgba(20,0,400,0.7),rgba(50,0,300,0.7),rgba(100,0,100,0.7),rgba(200,0,50,0.7),rgba(250,0,75,0.7),rgba(300,0,25,0.7),rgba(238, 5, 17, 0.7));
+        }
+        #subcontainer-1{
+            padding: 15px;
+            color: white;
+            background: rgba(0,0,0,0.69);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #subcontainer-1 a{
+            text-decoration: none;
+            color: white;
+            border-style: solid;
+            padding: 8px;
+            border-radius: 20px;
+            background-color: black
+        }
+        #subcontainer-1 a:hover{
+            background-color: white;
+            border-color: black;
+            color: black;
+        }
+        #subcontainer-2{
+            padding-top: 20px;
+            padding-bottom: 40px;
+            font-family:'Akronim', cursive;
+            font-size: 100px;
+            text-align: center;
+            color: blanchedalmond;;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-shadow: 13px 13px 20px black, 12px 10px 30px black;
+        }
+        #subcontainer-2 img{
+            width:145px;
+            filter: drop-shadow(17px 13px 17px);
+        }
+        #subcontainer-2 a{
+            text-decoration: none;
+            border-style: solid;
+            padding: 8px;
+            border-radius: 20px;
+            font-size: 36px;
+            font-family: 'Stick No Bills';
+            background: linear-gradient(yellow,yellowgreen,green);
+            color: black;
+            text-shadow:none;
+        }
+        #subcontainer-2 a:hover{
+            color: yellow;
+            background: black;
+        }
+        #subcontainer-3{
+            background: rgba(0,0,0,0.6);
+            padding-top: 40px;
+            padding-bottom: 27px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #subcontainer-3 a{
+            text-decoration: none;
+            color: aliceblue;
+            background: linear-gradient(45deg,rgb(107, 4, 107),rgb(180, 123, 17));
+            padding: 5px 12px;
+            border-radius: 16px;
+            font-family: 'Stick No Bills', sans-serif;
+            font-size: 30px;
+        }
+        #subcontainer-3 a:hover{
+            background: black;
+            color: white;
+            transition: 0.5s;
+        }
+        #container-2{
+            background: linear-gradient(to left,rgba(70, 46, 1, 0.76),rgba(100, 65, 1, 0.76),rgba(146, 95, 1, 0.76),rgba(128, 0, 128, 0.678),rgba(128, 0, 128, 0.678),rgba(36, 1, 36, 0.678));
+            display: flex;
+            color:antiquewhite;
+            text-shadow: 1px 2px 2px yellowgreen;
+            font-family: 'Sedgwick Ave';
+            font-size: 19px;
+        }
+        #hero-div{
+            padding: 32px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: center;
+        }
+        #villain-div{
+            padding: 32px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: center;
+        }
+        .sub-img-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 13px;
+            padding: 5px;
+        }
+        #container-2 img{
+            height: 130px;
+        }
+        .selection-heading{
+            font-size: 58px;
+            font-family: 'Stick No Bills';
+            padding-left: 46px;
+            padding-right: 51px;
+            text-align: center;
+        }
+        #submit-button{
+            background: rgba(0,0,0,0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+        }
+        #submit-button a{
+            text-decoration: none;
+            padding: 10px;
+            font-size: 29px;
+            font-family: 'Rampart One', cursive;
+            color: aliceblue;
+            border-radius: 29px;
+            border-width: 4px;
+            border-color: antiquewhite;
+        }
+        #submit-button a:hover{
+            background:linear-gradient(darkred,brown,red,orange);
+            cursor: pointer;
+            
+        }
+        #bottom-banner{
+            background: rgba(0,0,0,0.7);
+            width: 100%;
+            padding-top:1%;
+        }
+        #bottom-text{
+            font-family: 'Sedgwick Ave', cursive;
+            font-size: 17px;
+            color: burlywood;
+            text-align: center;
+        }
+        #bottom-text a{
+            text-decoration:none;
+            font-family: 'Sedgwick Ave';
+            color: antiquewhite;
+        }    
+        #bottom-text a:hover{
+            color:lightcoral;
+        }
+        .gif-btn img{
+            height:100px;
+        }
+        .gif-btn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container-1">
+        <div id="subcontainer-1">
+            <a href="ch_samplePage.html">ABOUT ME</a>
+            <a href="rateMyWebsite.html">RATE MY WEBSITE</a>
+        </div>
+        <div id="subcontainer-2">
+            <img src="images/avengers-logo-removebg-preview.png">
+            <p>Welcome <br>to your very own : <br>Personalized Marvel Cinematic Universe</p>
+            <a href="instructions.html">CLICK TO KNOW MORE....</a>
+        </div>
+        <div id="subcontainer-3">
+            <div class="gif-btn"><img src="images/gif_for_loader_5.gif"><a href="heroes_home.html">Know Your Heroes</a></div>
+            <div class="gif-btn"><img src="images/villain_gif_for_loader_2.gif"><a href="villians_home.html">Know Your Villains</a></div>
+        </div>
+    </div>
+    <div id="submit-button">
+        <a href="teamCreate.html">CREATE YOUR TEAM</a>
+    </div>
+    <div class="sub-container" id="bottom-banner">
+        <p id="bottom-text">Made with Hardwork, Things are not always made with love only !  <a href="ch_samplePage.html"> ~Humaid Alam Ansari (click to know more)</a></p>
+    </div>
+</body>
+</html>

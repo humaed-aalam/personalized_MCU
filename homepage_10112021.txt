@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background: url(images/home_background.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .container{
+            height:100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #container-1{
+            background: linear-gradient(to top right,rgba(1, 5, 54, 0.932),rgba(5, 15, 119, 0.863),rgba(20,0,500,0.7),rgba(0,0,500,0.7),rgba(20,0,400,0.7),rgba(50,0,300,0.7),rgba(100,0,100,0.7),rgba(200,0,50,0.7),rgba(250,0,75,0.7),rgba(300,0,25,0.7),rgba(238, 5, 17, 0.7));
+        }
+        #subcontainer-1{
+            padding: 15px;
+            color: white;
+            background: rgba(0,0,0,0.69);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #subcontainer-1 a{
+            text-decoration: none;
+            color: white;
+            border-style: solid;
+            padding: 8px;
+            border-radius: 20px;
+            background-color: black
+        }
+        #subcontainer-1 a:hover{
+            background-color: white;
+            border-color: black;
+            color: black;
+        }
+        #subcontainer-2{
+            padding-top: 20px;
+            padding-bottom: 40px;
+            font-family:'Akronim', cursive;
+            font-size: 100px;
+            text-align: center;
+            color: blanchedalmond;;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-shadow: 13px 13px 20px black, 12px 10px 30px black;
+        }
+        #subcontainer-2 img{
+            width:145px;
+            filter: drop-shadow(17px 13px 17px);
+        }
+        #subcontainer-2 a{
+            text-decoration: none;
+            border-style: solid;
+            padding: 8px;
+            border-radius: 20px;
+            font-size: 36px;
+            font-family: 'Stick No Bills';
+            background: linear-gradient(yellow,yellowgreen,green);
+            color: black;
+            text-shadow:none;
+        }
+        #subcontainer-2 a:hover{
+            color: yellow;
+            background: black;
+        }
+        #subcontainer-3{
+            background: rgba(0,0,0,0.6);
+            padding-top: 40px;
+            padding-bottom: 27px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #subcontainer-3 a{
+            text-decoration: none;
+            color: aliceblue;
+            background: linear-gradient(45deg,rgb(107, 4, 107),rgb(180, 123, 17));
+            padding: 5px 12px;
+            border-radius: 16px;
+            font-family: 'Stick No Bills', sans-serif;
+            font-size: 30px;
+        }
+        #subcontainer-3 a:hover{
+            background: black;
+            color: white;
+            transition: 0.5s;
+        }
+        #container-2{
+            background: linear-gradient(to left,rgba(70, 46, 1, 0.76),rgba(100, 65, 1, 0.76),rgba(146, 95, 1, 0.76),rgba(128, 0, 128, 0.678),rgba(128, 0, 128, 0.678),rgba(36, 1, 36, 0.678));
+            display: flex;
+            color:antiquewhite;
+            text-shadow: 1px 2px 2px yellowgreen;
+            font-family: 'Sedgwick Ave';
+            font-size: 19px;
+        }
+        #hero-form{
+            padding: 32px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: center;
+        }
+        #villain-form{
+            padding: 32px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: center;
+        }
+        .sub-img-content{
+            display: flex;
+            margin: 8px;
+            padding: 5px;
+        }
+        #container-2 img{
+            height: 130px;
+        }
+        .selection-heading{
+            font-size: 58px;
+            font-family: 'Stick No Bills';
+            padding-left: 46px;
+            padding-right: 51px;
+            text-align: center;
+        }
+        #submit-button{
+            background: rgba(0,0,0,0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+        }
+        #submit-button button {
+            background: linear-gradient(45deg, black, transparent);
+            padding: 10px;
+            font-size: 29px;
+            font-family: 'Rampart One', cursive;
+            color: aliceblue;
+            border-radius: 29px;
+            border-width: 4px;
+            border-color: antiquewhite;
+        }
+        #submit-button button:hover{
+            background:rgba(0,200,0,0.6);
+            cursor: pointer;
+            
+        }
+        #bottom-banner{
+            background: rgba(0,0,0,0.7);
+            width: 100%;
+            padding-top:1%;
+        }
+        #bottom-text{
+            font-family: 'Sedgwick Ave', cursive;
+            font-size: 17px;
+            color: burlywood;
+            text-align: center;
+        }
+        #bottom-text a{
+            text-decoration:none;
+            font-family: 'Sedgwick Ave';
+            color: antiquewhite;
+        }    
+        #bottom-text a:hover{
+            background:linear-gradient(rgb(15, 15, 194),cyan);
+            border-style:solid;
+            border-radius:10px;
+            color:black;
+        }
+        .gif-btn img{
+            height:100px;
+        }
+        .gif-btn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container-1">
+        <div id="subcontainer-1">
+            <a href="ch_samplePage.html">ABOUT ME</a>
+            <div style="text-align: center;font-size:18px;font-family: 'Sedgwick Ave';font-weight: 800;border-style: solid;border-width:3px;border-color: aliceblue;padding:3px 20px;border-radius: 10px;border-style: groove;background: rgba(0,220,0,0.4);"><p id="count">0</p><img width="25px" src="images/view-icon-3.png"></div>
+            <a href="rateMyWebsite.html">RATE MY WEBSITE</a>
+        </div>
+        <div id="subcontainer-2">
+            <img src="images/avengers-logo-removebg-preview.png">
+            <p>Welcome <br>to your very own : <br>Personalized Marvel Cinematic Universe</p>
+            <a href="instructions.html">CLICK TO KNOW MORE....</a>
+        </div>
+        <div id="subcontainer-3">
+            <div class="gif-btn"><img src="images/gif_for_loader_5.gif"><a href="heroes_home.html">Know Your Heroes</a></div>
+            <div class="gif-btn"><img src="images/villain_gif_for_loader_2.gif"><a href="villians_home.html">Know Your Villains</a></div>
+        </div>
+    </div>
+    <div class="container" id="container-2">
+        
+        <div id="img-container-2" style="filter: drop-shadow(4px 4px 8px rgb(241, 164, 21));">
+            <form id="hero-form">
+            <div class="selection-heading">SELECT YOUR HEROES</div>
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Iron Man" id="iron-man"><label for="iron-man"><img src="images/ironman-full-body-1.png-removebg-preview.png"><p>Iron Man</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Thor" id="thor"><label for="thor"><img src="images/thor-full-body-1-removebg-preview.png"><p>Thor</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Captain America" id="captain-america"><label for="captain-america"><img src="images/captainamerica-full-body-2-removebg-preview.png"><p>Captain America</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Hulk" id="hulk"><label for="hulk"><img src="images/hulk-full-body-2-removebg-preview.png"><p>Hulk</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Black Widow" id="black-widow"><label for="black-widow"><img src="images/blackwidow-full-body-1-removebg-preview.png"><p>Black Widow</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Hawk Eye" id="hawk-eye"><label for="hawk-eye"><img src="images/hawkeye-full-body-2-removebg-preview.png"><p>Hawk Eye</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Wanda" id="wanda"><label for="wanda"><img src="images/wanda-full-body-1-removebg-preview.png"><p>Wanda</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Vision" id="vision"><label for="vision"><img src="images/vision-full-body-2-removebg-preview.png"><p>Vision</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Black Panther" id="black-panther"><label for="black-panther"><img src="images/blackpanther-full-body-2-removebg-preview.png"><p>Black Panther</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Falcon" id="falcon"><label for="falcon"><img src="images/falcon-full-body-1-removebg-preview.png"><p>Falcon</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Bucky" id="bucky"><label for="bucky"><img src="images/bucky-full-body-1-removebg-preview.png"><p>Bucky</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Gamora" id="gamora"><label for="gamora"><img src="images/gamora-full-body-1-removebg-preview.png"><p>Gamora</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Captain Marvel" id="captain-marvel"><label for="captain-marvel"><img src="images/captain-marvel-full-body-2-removebg-preview.png"><p>Captain Marvel</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Ant Man" id="ant-man"><label for="ant-man"><img src="images/antman-full-body-2-removebg-preview.png"><p>Ant Man</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Spider Man" id="spider-man"><label for="spider-man"><img src="images/spiderman--full-body-1-removebg-preview.png"><p>Spider Man</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Star Lord" id="star-lord"><label for="star-lord"><img src="images/starlord-full-body-2-removebg-preview.png"><p>Star lord</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Doctor Strange" id="doctor-strange"><label for="doctor-strange"><img src="images/doctorStrange-full-body-2-removebg-preview.png"><p>Doctor Strange</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Rocket" id="rocket"><label for="rocket"><img src="images/rocket-full-body-image-2-removebg-preview.png"><p>Rocket</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Drax" id="drax"><label for="drax"><img src="images/drax-full-body-2-removebg-preview.png"><p>Drax</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Hero" value="Groot" id="groot"><label for="groot"><img src="images/groot-full-body-1-removebg-preview.png"><p>Groot</p></label></div>
+
+            </form>
+        </div>
+        <div id="img-container-1" style="filter: drop-shadow(4px 4px 8px rgb(122, 30, 122));">
+            <form id="villain-form">
+            <div class="selection-heading">SELECT YOUR VILLAINS</div>
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Thanos" id="thanos"><label for="thanos"><img src="images/thanos-full-body-1-removebg-preview.png"><p>Thanos</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Loki" id="loki"><label for="loki"><img src="images/loki-full-body-2-removebg-preview.png"><p>Loki</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Ultron" id="ultron"><label for="ultron"><img src="images/ultron-full-body-2-removebg-preview.png"><p>Ultron</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Hela" id="hela"><label for="hela"><img src="images/hela-full-body-1-removebg-preview.png"><p>Hela</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Galactus" id="galactus"><label for="galactus"><img src="images/galactus-full-body-1-removebg-preview.png"><p>Galactus</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Apocalypse" id="apocalypse"><label for="apocalypse"><img src="images/apocalypse-full-body-1-removebg-preview.png"><p>Apocalypse</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Dormammu" id="dormammu"><label for="dormammu"><img src="images/dormammu-full-body-2-removebg-preview.png"><p>Dormammu</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Mysterio" id="mysterio"><label for="mysterio"><img src="images/mysterio-full-body-2-removebg-preview.png"><p>Mysterio</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Zemo" id="zemo"><label for="zemo"><img src="images/zemo-full-body-2-removebg-preview.png"><p>Zemo</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Red Skull" id="red-skull"><label for="red-skull"><img src="images/redskull-full-body-1-removebg-preview.png"><p>Red Skull</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Whiplash" id="whiplash"><label for="whiplash"><img src="images/whiplash-full-body-2-removebg-preview.png"><p>Whiplash</p></label></div>         
+            
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Ronnan" id="ronnan"><label for="ronnan"><img src="images/ronnan-full-body-2-removebg-preview.png"><p>Ronnan</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Doctor Doom" id="doctor-doom"><label for="doctor-doom"><img src="images/doctordoom-full-body-2-removebg-preview.png"><p>Doctor Doom</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Ross" id="ross"><label for="ross"><img src="images/ross-full-body-1-removebg-preview.png"><p>Ross</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Ego" id="ego"><label for="ego"><img src="images/ego-full-body-1-removebg-preview.png"><p>Ego</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Magneto" id="magneto"><label for="magneto"><img src="images/magneto-full-body-2-removebg-preview.png"><p>Magneto</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Task Master" id="task-master"><label for="task-master"><img src="images/taskmaster-full-body-1-removebg-preview.png"><p>Task Master</p></label></div>            
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Kill Monger" id="kill-monger"><label for="kill-monger"><img src="images/killmonger-full-body-1-removebg-preview.png"><p>Kill Monger</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="selected--villain" value="Zola" id="zola"><label for="zola"><img src="images/zola-full-body-1.jpg"><p>Zola</p></label></div>
+
+            <div class=sub-img-content><input type="radio" name="Selected Villain" value="Iron Monger" id="iron-monger"><label for="iron-monger"><img src="images/IronMan_Monger-full-body-1-removebg-preview.png"><p>Iron Monger</p></label></div>
+            </form>
+        </div>
+    </div>
+    <div id="submit-button">
+        <button onclick="displayRadioValue()">submit your response</button>
+    </div>
+    <div id="results" style="background: rgba(0,0,0,0.7);font-size: 50px;font-family: 'Permanent Marker', cursive;color:antiquewhite;text-align: center;">
+    </div>
+    <div class="sub-container" id="bottom-banner">
+        <p id="bottom-text">Made with Hardwork, Things are not always made with love only !  <a href="ch_samplePage.html"> ~Humaid Alam Ansari</a></p>
+    </div>
+    <script>
+        var dictionary={"iron-man":35.6,"thor":39.1,"captain-america":32.75,"hulk":30.45,"black-widow":29.75,"hawk-eye":9.45,"wanda":48.45,"vision":48.05,"black-panther":29.9,"falcon":22.7,"bucky":21,"gamora":32.2,"captain-marvel":61.95,"ant-man":35.45,"spider-man":34.25,"star-lord":30.5,"doctor-strange":43.05,"rocket":7.1,"drax":7.85,"groot":9.45}
+        const countEl=document.getElementById('count');
+		updateVisitCount();
+		function updateVisitCount(){
+			fetch('https://api.countapi.xyz/update/youtube/328e30fb-5336-4439-ab4b-c8d656b33b3c/?amount=1').then(res=>res.json()).then(res=>{countEl.innerHTML=res.value;});
+		}
+        function displayRadioValue() {
+            document.getElementById("results").innerHTML = "";
+            var ele = document.getElementsByTagName('input');
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].type="radio") {
+                    if(ele[i].checked)
+                        document.getElementById("results").innerHTML+= ele[i].name + " : "+ ele[i].value + "<br>";
+                }
+            }
+        }
+    </script>
+</body>
+<!--
+    
+-->
+</html>

@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Stick No Bills', sans-serif;
+    color: antiquewhite;
+}
+body{
+    background: url("images/heroes-background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#villains{
+    background: url("images/villains_background_4.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width:100%;
+    height:100vh;
+    background: rgba(12, 0, 11, 0.8);
+}
+#banner{
+    width: 100%;
+    height:9%;
+    padding-top: 1%;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 6px 1px 12px green, 2px 6px 8px pink;
+}
+.btn{
+    border-style: solid;
+    height:max-content;
+    font-size: 25px;
+    padding: 9px;
+    border-radius: 28px;
+    color: aliceblue;
+    background: darkred;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.btn a{
+    text-decoration: none;
+}
+#contents{
+    width:100%;
+    height:80%;
+    /*background: linear-gradient(to top right,rgb(82, 79, 79),yellow);*/
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+}
+#content1{
+    width:40%;
+    /*background:linear-gradient(to top right,purple,lightgreen);*/
+    background:rgba(0,0,0,0.3);
+    text-align: center;
+}
+#content2{
+    width:40%;
+    /*background:linear-gradient(to top left,aqua,yellowgreen); */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.side-btn{
+    padding-top: 20%;
+}
+.side-btn button{
+    background: linear-gradient(45deg, yellow,yellowgreen, white);
+    padding: 7px;
+    border-radius: 15px;
+    border-style: hidden;
+}
+.side-btn button:hover{
+    background: rgb(53, 63, 48);
+}
+.side-btn a:hover{
+    color:yellowgreen;
+}
+.side-btn a{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#content2 img{
+    height:90%;
+    filter:drop-shadow(8px 8px 10px gray);
+}
+.outerscale{
+    background: rgb(197, 195, 195);
+    width: 70%;
+    margin-left: 14%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.innerscale{
+    border-radius: 15px;
+}
+.aanswer{
+    font-style: italic;
+    font-variant: petite-caps;
+    color: deepskyblue;
+    font-size: 36px;
+}
+img:hover{
+    transform: translateX(10px);
+    transition: 0.5s;
+}
+.outerscale:hover{
+    transform: scale(1.2);
+}
+#bottom-banner{
+    width: 100%;
+    padding-top:3%;
+}
+#bottom-text{
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 17px;
+    color: burlywood;
+    text-align: center;
+}
+#bottom-text a{
+    text-decoration:none;
+    font-family: 'Sedgwick Ave';
+}    
+#bottom-text a:hover{
+    color:darkgoldenrod;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero-Home</title>
+    <link rel="stylesheet" href="common_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marvel:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+ <style>
+     body{
+        background:url(images/heroes-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: fit-content;
+        justify-content: center;
+        box-sizing: border-box;
+        background-attachment: fixed;
+     }
+/****************************************************/
+     #images{
+        display: inline-block;
+        background: linear-gradient(to top right,rgba(177, 3, 3, 0.8),rgba(6, 6, 138, 0.8));
+        background-attachment: fixed;
+     }
+     .sub-images img{
+         width:280px;
+         border-width: 5px;
+         margin-top:30px;
+         margin-left: 30px;
+         border-style:inset;
+         border-color:rgba(163, 174, 233, 0.7);
+         
+     }
+     .sub-images:hover img{
+         transform: scale(0.8) rotate(10deg);
+         border-radius:20px;
+         border-style: solid;
+         border-color:yellow;
+         border-width: 5px;
+         transition: 0.5s;
+     }
+     .sub-images{
+        display: inline-block;
+        text-align: center;
+        font-size: 28px;  
+        font-family: 'Bangers', cursive;
+        color: cornsilk;
+        padding-left: 25px;
+     }
+     .details-box{
+         border: solid;
+         font-size: 17px;
+         font-family:  'Marvel', sans-serif;
+         color: white;
+         background: linear-gradient(to right,black,darkblue,blue,rgb(233, 80, 105),red);
+         border-style: hidden;
+         border-radius: 56px;
+         padding: 5px 0 5px 0;
+         margin-left: 11px;
+         margin-right: 31px;
+     }
+     .sub-images:hover p{
+         opacity:1;
+         transition:0.5s;
+         transform: translateX(10%);
+     }
+     #preloader img{
+        width: 21%;
+     }
+     #bottom-banner{
+        background: rgba(0,0,0,0.6);
+        width: 100%;
+        padding-top:1%;
+        padding-bottom:1%;
+    }
+    #bottom-text{
+        font-family: 'Sedgwick Ave', cursive;
+        font-size: 17px;
+        color: burlywood;
+        text-align: center;
+    }
+    #bottom-text a{
+        text-decoration:none;
+        font-family: 'Sedgwick Ave';
+        color: antiquewhite;
+    }    
+    #bottom-text a:hover{
+        color:lightcoral;
+    }
+/****************************************************/
+ </style>
+</head>
+<body>
+    <div id="preloader">
+        <img src="images/gif_for_loader.gif">
+    </div>
+    <div id="banner">
+        <span class="banner-button"><a href="teamCreate.html">CREATE YOUR TEAM</a></span> 
+        <span class="banner-button"><a href="0_index.html">HOME</a></span>
+        <span class="banner-button" id="banner-button2"> <a href="villians_home.html">HAVE A LOOK AT VILLAINS</a></span> 
+    </div>
+    <div id="images">
+        <div class="sub-images"><a href="captainAmerica.html"><img src="images/captain-america-front-face.jpg"></a><p>Captain America</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="ironMan.html"><img src="images/iron-man-front-face.jpg"></a><p>Iron Man</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="Thor.html"><img src="images/thor-front-face.jpg"></a><p>Thor</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="Hulk.html"><img src="images/hulk-front-face.jpg"></a><p>Hulk</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="hawkeye.html"><img src="images/hawkeye-front-face.jpg"></a><p>Hawk Eye</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="blackwidow.html"><img src="images/blackwidow-front-face.jpg"></a><p>Black Widow</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="SpiderMan.html"><img src="images/spider-man-front-face.jpg"></a><p>Spider-Man</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="bucky.html"><img src="images/bucky-front-face.jpg"></a><p>Bucky</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="falcon.html"><img src="images/falcon-front-face.jpg"></a><p>Falcon</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="DoctorStrange.html"><img src="images/doctorStrange-front-face.jpg"></a><p>Doctor Strange</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="BlackPanther.html"><img src="images/blackpanther-front-face.jpg"></a><p>Black Panther</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="Vision.html"><img src="images/vision-front-face.jpg"></a><p>Vision</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="Wanda.html"><img src="images/wanda-front-face.jpg"></a><p>Wanda</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="antMan.html"><img src="images/antman-front-face.jpg"></a><p>Ant-Man</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="CaptainMarvel.html"><img src="images/captain-marvel-front-face.jpg"></a><p>Captain Marvel</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="Gamora.html"><img src="images/Gamora-front-face.jpg"></a><p>Gamora</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="StarLord.html"><img src="images/star-lord-front-face.jpg"></a><p>Star Lord</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="groot.html"><img src="images/groot-front-face.jpg"></a><p>Groot</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="rocket.html"><img src="images/Rocket-front-face.jpg"></a><p>Rocket</p><p class="details-box">Click on image to know more...</p></div>
+        <div class="sub-images"><a href="drax.html"><img src="images/drax-front-face.jpg"></a><p>Drax</p><p class="details-box">Click on image to know more...</p></div>
+    </div>
+    <div class="sub-container" id="bottom-banner">
+        <p id="bottom-text">Made with Hardwork, Things are not always made with love only !  <a href="ch_samplePage.html"> ~Humaid Alam Ansari (click to know more)</a></p>
+    </div>
+    <script>
+        var loader=document.getElementById("preloader");
+        window.addEventListener("load",function(){loader.style.display="none";})
+    </script>
+</body>
+</html>

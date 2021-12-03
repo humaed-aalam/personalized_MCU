@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chPagesStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miltonian&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miltonian&family=Nerko+One&display=swap" rel="stylesheet">
+
+    <title>Sample Character</title>
+    <style>
+        .container{
+            /*background:linear-gradient(to left,blue,cyan);*/
+            background: linear-gradient(to top left,rgba(5, 1, 56, 0.9),rgba(0,30,0,0.9),rgba(100,20,0,0.9));
+            background-attachment: fixed;
+        }
+        #banner{
+            padding: 20px 10px 0 73px;
+            box-sizing: border-box;
+        }
+        #content1{
+            background: unset;  
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .aanswer{
+            font-family: 'Miltonian', cursive;
+            font-family: 'Nerko One', cursive;
+            color:coral;
+        }
+        #content2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        #content2 a{
+            text-decoration: none;
+            background: linear-gradient(to top left,darkgreen,greenyellow);
+            padding: 2%;
+            font-family:Arial, Helvetica, sans-serif;
+            border-radius: 11px;
+            border-style: groove;
+            color:rgb(28, 6, 48);
+        }
+        #content2 a:hover{
+            background: linear-gradient(to top left,blue,cyan);
+            color:greenyellow;
+        }
+        #content2 img:hover{
+            transform: unset;
+        }
+    </style>
+</head>
+<body style="background: url(images/my_wallpaper.gif);background-attachment: fixed;background-repeat: no-repeat;background-position: center;background-size: cover;">
+    <div class="container">
+        <div class="sub-container" id="banner">
+            <p style="font-family: 'Miltonian', cursive;">Humaid Alam Ansari</p>
+            <div class="btn"><a href="0_index.html">HOME</a></div>
+        </div>
+        <div class="sub-container" id="contents">
+            <div class="sub-sub-container" id="content1" >
+                <p>Contact No.: </p>
+                <p class="aanswer">9818739861</p>
+                <p>Email id : </p>
+                <p class="aanswer" style="font-variant:unset;">humaid.alam@gmail.com</p>
+                <p>Higher Education : </p>
+                <p class="aanswer"> MCA from Jamia Millia islamia</p>
+                <p class="aanswer"> B.Sc(H)Mathematics from Jamia Millia Islamia</p>
+                <p>School : </p>
+                <p class="aanswer">New Horizon School</p>
+            </div>
+            <div class="sub-sub-container" id="content2">
+                <img style="border-style:solid; height: 55%; border-style:groove;border-radius: 10px;border-width: 7px;" src="images/humaid-img.PNG">
+               <a href="rateMyWebsite.html">Rate my website</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

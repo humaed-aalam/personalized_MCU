@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500&display=swap" rel="stylesheet">
+    <title>Instructions</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        background: linear-gradient(to top right,darkgreen,darkblue);
+        background-attachment: fixed;
+    }
+    .subcontainer-1{
+        padding: 15px;
+        color: white;
+        background: rgba(0,0,0,0.69);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }    
+    .subcontainer-1 a{
+        text-decoration: none;
+        color: white;
+        border-style: solid;
+        padding: 8px;
+        border-radius: 20px;
+        background-color: black
+    }
+    .subcontainer-1 a:hover{
+        background-color: white;
+        color: black        
+    }
+    #subcontainer-2{
+        padding: 40px;
+    }
+    #subcontainer-2 h1{
+        font-size: 50px;
+        color: yellow;
+        font-family:'Akronim', cursive;
+        text-align: center;
+        font-weight: unset;
+    }
+    #subcontainer-2 li{
+        font-size: 23px;
+        font-family: 'Autour One', cursive;
+    }
+    .odd li{
+        color:goldenrod;
+        text-shadow: 2px 3px darkred;
+    }
+    .even li{
+        color:khaki;
+        text-shadow: 2px 3px purple;
+    }
+    li{ 
+        list-style-image:linear-gradient(to top right,lightcoral,lightgreen);
+    }
+    li#note{
+        color: orange;
+        font-family: 'Stick No Bills', sans-serif;
+        font-size: 30px;
+    }
+    .bottom-btn{
+        background: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 8px;
+    }
+    .bottom-btn a{
+        border-radius: 7px;
+        font-size: 30px;
+        background: linear-gradient(45deg,red,orange);
+        color: black;
+        border-style: groove;
+        border-width: 6px;
+    }
+    .bottom-btn a:hover{
+        background:floralwhite;
+
+    }
+    #bottom-text{
+        font-family: 'Sedgwick Ave', cursive;
+        font-size: 17px;
+        color: floralwhite;
+        text-align: center;
+    }
+    #bottom-text a{
+        text-decoration:none;
+        font-family: 'Sedgwick Ave';
+        color: lightcoral;
+        padding: 7px;
+    }    
+    #bottom-text a:hover{
+        color:black;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="subcontainer-1">
+            <a href="0_index.html">HOME</a>
+        </div>
+        <div id="subcontainer-2">
+            <h1>About Personalized Marvel Cinematic Universe</h1>
+            <div class="odd"><li>It is a fantasy team making website where you can have your marvel heroes and villains teamed up according to your choice.</li></div><br>
+            <div class="even"><li>Go through the strengths and weaknesses of every character, click on <em>Know your heroes/Know your villains</em> tab on home page accoordingly.</li></div><br>
+            <div class="odd"><li>This will open a new webpage where you can hover over the images to know the name of the character and when you click them, the character's information page will open up.</li></div><br>
+            <div class="even"><li>After going through information of characters, click on <em>create your team</em> either on Home page or on characters' information page.</li></div><br>
+            <div class="odd"><li>This will open a new webpage, prompt will open up asking you to enter name of your desired heroes and villains (two each).</li></div><br>
+            <div class="even"><li><strong>Please enter names carefully in all lower case (for example if you desired to choose <em>Thor</em> then you have to type <em>thor</em>)</strong></li></div><br>
+            <div class="odd"><li><strong>If the name of your desired hero contains more than one word then simply add a space between the two names (for example if your desired character is <em>Captain America</em> or <em>Doctor Doom</em> then you have to type <em>captain america</em> or <em>doctor doom</em> respectively)</strong></li></div><br>
+            <div class="even"><li>Based on some calculations (which are based on performance chart shown to you in character's information page) you will be shown scores of both teams.</li></div><br>
+            <div class="odd"><li>Check whether your fantasized team of heroes will  be able to beat your fantasized team of villains or not !</li></div><br>
+            <div><li id="note">Kindly note that this fantasy based team creating website is based on my fantasy and there is big chance that we might be disagreeing on some points.</li></div><br>
+            <div class="odd"><li>Best of luck !</li></div><br>
+        </div>
+        <div class="subcontainer-1 bottom-btn">
+            <a href="teamCreate.html">CREATE YOUR TEAM</a>
+        </div>
+        <div id="bottom-banner">
+            <p id="bottom-text">Made with Hardwork, Things are not always made with love only !  <a href="ch_samplePage.html"> ~Humaid Alam Ansari (click to know more)</a></p>
+        </div>
+    </div>
+</body>
+</html>
